@@ -1,39 +1,83 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #d5bdaf;
+  display: grid;
+  place-content: center;
+  font-family: 'Gloria Hallelujah', cursive;
+  height: 100vh;
+  font-size: 1.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  height: 80vh;
+  width: 50vh;
+  border-radius: 1rem;
+  -webkit-box-shadow: 7px 7px 5px 0 rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 7px 7px 5px 0 rgba(50, 50, 50, 0.75);
+  box-shadow: 7px 7px 5px 0 rgba(50, 50, 50, 0.75);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.wrapper {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.screen {
+  grid-column: 1 / -1;
+  text-align: right;
+  font-size: 4rem;
+  overflow: hidden;
+  background-color: rgb(147, 141, 141);
+}
+
+.btn {
+  display: grid;
+  place-content: center;
+  background-color: #ddd;
+  color: #333;
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid #bababa;
+}
+
+.btn:hover {
+  background-color: gray;
+}
+
+.light-gray {
+  background-color: gray;
+  color: black;
+}
+
+.light-gray:hover {
+  background-color: white;
+}
+
+.orange {
+  background-color: #e18132;
+}
+
+.orange:hover {
+  background-color: white;
+  color: #d28f14;
+}
+
+.zero {
+  grid-column: 1 / span 2;
+  place-content: unset;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+  padding-left: 2rem;
+  border: 1px solid #bababa;
 }
