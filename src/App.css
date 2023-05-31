@@ -23,8 +23,6 @@ button {
 
 .container {
   height: 80vh;
-  margin-top: 10%;
-  margin-left: 20%;
   width: 100vh;
   border-radius: 1rem;
   -webkit-box-shadow: 7px 7px 5px 0 rgba(50, 50, 50, 0.75);
@@ -90,11 +88,38 @@ button {
 }
 
 h2 {
-  color: darkblue;
+  color: #4f4e4e;
   text-align: center;
 }
 
 p {
   color: darkblue;
   text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.welcome {
+  color: black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-right: 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
 }
