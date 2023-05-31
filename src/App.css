@@ -23,7 +23,9 @@ button {
 
 .container {
   height: 80vh;
-  width: 50vh;
+  margin-top: 10%;
+  margin-left: 20%;
+  width: 100vh;
   border-radius: 1rem;
   -webkit-box-shadow: 7px 7px 5px 0 rgba(50, 50, 50, 0.75);
   -moz-box-shadow: 7px 7px 5px 0 rgba(50, 50, 50, 0.75);
@@ -85,4 +87,14 @@ button {
   align-items: center;
   padding-left: 2rem;
   border: 1px solid #bababa;
+}
+
+h2 {
+  color: darkblue;
+  text-align: center;
+}
+
+p {
+  color: darkblue;
+  text-align: center;
 }
