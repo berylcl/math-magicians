@@ -16,7 +16,9 @@ body {
   height: 100vh;
   font-size: 1.5rem;
 }
-
+button {
+  font-family: 'Gloria Hallelujah', cursive;
+}
 .container {
   height: 80vh;
   width: 50vh;
@@ -37,9 +39,10 @@ body {
 .screen {
   grid-column: 1 / -1;
   text-align: right;
-  font-size: 4rem;
+  font-size: 2rem;
   overflow: hidden;
   background-color: rgb(147, 141, 141);
+  margin-bottom: 2px;
 }
 
 .btn {
