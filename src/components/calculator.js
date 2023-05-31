@@ -18,12 +18,12 @@ const Calculator = () => {
       setTotal(false);
     }
 
-    if (curState === '0') {
+    if (curState === '0' && number !== '.') {
       setCurState(number);
       setInput(number);
     } else {
-      setCurState((prev) => prev + number);
-      setInput((prevInput) => prevInput + number);
+      setCurState((prev) => `${parseFloat(prev)}${number}`);
+      setInput((prevInput) => `${parseFloat(prevInput)}${number}`);
     }
   };
 

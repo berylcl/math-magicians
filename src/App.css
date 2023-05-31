@@ -16,9 +16,11 @@ body {
   height: 100vh;
   font-size: 1.5rem;
 }
+
 button {
   font-family: 'Gloria Hallelujah', cursive;
 }
+
 .container {
   height: 80vh;
   width: 50vh;
