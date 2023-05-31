@@ -1,24 +1,28 @@
 const calculate = (preState, curState, operator) => {
-  let result;
+  const num1 = parseFloat(preState);
+  const num2 = parseFloat(curState);
 
-  switch (operator) {
-    case '/':
-      result = String(parseFloat(preState) / parseFloat(curState));
-      break;
-    case '*':
-      result = String(parseFloat(preState) * parseFloat(curState));
-      break;
-    case '+':
-      result = String(parseFloat(preState) + parseFloat(curState));
-      break;
-    case '-':
-      result = String(parseFloat(preState) - parseFloat(curState));
-      break;
-    default:
-      return 'Invalid operator'; // Add a default return statement for unrecognized operators
+  if (operator === '+') {
+    return (num1 + num2).toString();
   }
 
-  return result;
+  if (operator === '-') {
+    return (num1 - num2).toString();
+  }
+
+  if (operator === '*') {
+    return (num1 * num2).toString();
+  }
+
+  if (operator === '/') {
+    if (num2 === 0) {
+      return 'Error: Division by zero';
+    }
+
+    return (num1 / num2).toString();
+  }
+
+  return '';
 };
 
 export default calculate;

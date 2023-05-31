@@ -22,8 +22,9 @@ const Calculator = () => {
       setCurState(number);
       setInput(number);
     } else {
-      setCurState((prev) => `${parseFloat(prev)}${number}`);
-      setInput((prevInput) => `${parseFloat(prevInput)}${number}`);
+      const newCurState = curState === '0' ? number : curState + number;
+      setCurState(newCurState);
+      setInput(newCurState);
     }
   };
 
@@ -37,7 +38,6 @@ const Calculator = () => {
     setOperator(null);
     setTotal(true);
   };
-
   const reset = () => {
     setPreState('');
     setCurState('');
