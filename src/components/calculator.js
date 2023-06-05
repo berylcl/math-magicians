@@ -106,9 +106,9 @@ const Calculator = () => {
   return (
     <div>
       <div className="container">
-        <h2>
+        <h3>
           Let&apos;s do some math!
-        </h2>
+        </h3>
         <div className="wrapper">
           <div className="screen">{input}</div>
           <button type="button" className="btn light-gray" onClick={reset}>

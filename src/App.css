@@ -29,6 +29,7 @@ button {
 
 .wrapper {
   display: grid;
+  margin-top: 10%;
   height: 60vh;
   width: 100vh;
   grid-template-columns: repeat(4, 1fr);
@@ -90,6 +91,11 @@ h2 {
   margin-left: 4%;
 }
 
+h3 {
+  font-size: 30px;
+  margin-top: 10%;
+}
+
 p {
   text-align: center;
 }
@@ -102,32 +108,39 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: 5px solid #333;
+  padding: 10px;
 }
 
 .nav-links {
   display: flex;
   list-style: none;
-  margin-top: -16%;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-links li {
+.nav-links li:not(:last-child) {
   margin-right: 10px;
 }
 
 .nav-links a {
   text-decoration: none;
+  color: #00008b;
 }
 
 .logo {
   font-size: 40px;
   font-weight: 800;
   text-decoration: none;
-  margin-top: -16%;
-  color: white;
+  color: #333;
 }
 
 .logo a {
-  color: black;
+  color: #333;
 }
 
 .quote {
