@@ -22,7 +22,7 @@ button {
 }
 
 .container {
-  height: 80vh;
+  height: 70vh;
   width: 100vh;
   border-radius: 1rem;
   -webkit-box-shadow: 7px 7px 5px 0 rgba(50, 50, 50, 0.75);
@@ -89,20 +89,16 @@ button {
 
 h2 {
   color: #4f4e4e;
-  text-align: center;
+  text-align: left;
+  margin-left: 4%;
 }
 
 p {
-  color: darkblue;
   text-align: center;
 }
 
 ul {
   list-style-type: none;
-}
-
-.welcome {
-  color: black;
 }
 
 .navbar {
@@ -114,6 +110,7 @@ ul {
 .nav-links {
   display: flex;
   list-style: none;
+  margin-top: -16%;
 }
 
 .nav-links li {
@@ -122,4 +119,21 @@ ul {
 
 .nav-links a {
   text-decoration: none;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: 800;
+  text-decoration: none;
+  margin-top: -16%;
+  color: white;
+}
+
+.logo a {
+  color: black;
+}
+
+.quote {
+  margin-top: 5%;
+  height: 200px;
 }
