@@ -22,20 +22,16 @@ button {
 }
 
 .container {
-  height: 80vh;
-  margin-top: 10%;
-  margin-left: 20%;
-  width: 100vh;
-  border-radius: 1rem;
-  -webkit-box-shadow: 7px 7px 5px 0 rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: 7px 7px 5px 0 rgba(50, 50, 50, 0.75);
-  box-shadow: 7px 7px 5px 0 rgba(50, 50, 50, 0.75);
+  display: flex;
+  width: 100%;
+  gap: 2rem;
 }
 
 .wrapper {
   display: grid;
-  height: 100%;
-  width: 100%;
+  margin-top: 10%;
+  height: 60vh;
+  width: 100vh;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(6, 1fr);
 }
@@ -90,11 +86,64 @@ button {
 }
 
 h2 {
-  color: darkblue;
-  text-align: center;
+  color: #4f4e4e;
+  text-align: left;
+  margin-left: 4%;
+}
+
+h3 {
+  font-size: 30px;
+  margin-top: 10%;
 }
 
 p {
-  color: darkblue;
   text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: 5px solid #333;
+  padding: 10px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #00008b;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: 800;
+  text-decoration: none;
+  color: #333;
+}
+
+.logo a {
+  color: #333;
+}
+
+.quote {
+  margin-top: 5%;
+  height: 200px;
 }

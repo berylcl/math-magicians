@@ -104,66 +104,71 @@ const Calculator = () => {
     reset,
   ]);
   return (
-    <div className="container">
-      <div className="wrapper">
-        <div className="screen">{input}</div>
-        <button type="button" className="btn light-gray" onClick={reset}>
-          AC
-        </button>
-        <button type="button" className="btn light-gray" onClick={() => handlePercent(preState, curState, setCurState)}>
-          %
-        </button>
-        <button type="button" className="btn light-gray" onClick={() => handleMinusPlus(curState, setCurState)}>
-          +/-
-        </button>
-        <button type="button" className="btn orange" onClick={() => handleOperator('/', preState, curState, setInput, setPreState, setCurState, setOperator, setTotal)}>
-          /
-        </button>
-        <button type="button" className="btn" onClick={() => inputNum('7')}>
-          7
-        </button>
-        <button type="button" className="btn" onClick={() => inputNum('8')}>
-          8
-        </button>
-        <button type="button" className="btn" onClick={() => inputNum('9')}>
-          9
-        </button>
-        <button type="button" className="btn orange" onClick={() => handleOperator('*', preState, curState, setInput, setPreState, setCurState, setOperator, setTotal)}>
-          X
-        </button>
-        <button type="button" className="btn" onClick={() => inputNum('4')}>
-          4
-        </button>
-        <button type="button" className="btn" onClick={() => inputNum('5')}>
-          5
-        </button>
-        <button type="button" className="btn" onClick={() => inputNum('6')}>
-          6
-        </button>
-        <button type="button" className="btn orange" onClick={() => handleOperator('+', preState, curState, setInput, setPreState, setCurState, setOperator, setTotal)}>
-          +
-        </button>
-        <button type="button" className="btn" onClick={() => inputNum('1')}>
-          1
-        </button>
-        <button type="button" className="btn" onClick={() => inputNum('2')}>
-          2
-        </button>
-        <button type="button" className="btn" onClick={() => inputNum('3')}>
-          3
-        </button>
-        <button type="button" className="btn orange" onClick={() => handleOperator('-', preState, curState, setInput, setPreState, setCurState, setOperator, setTotal)}>
-          -
-        </button>
-        <button type="button" className="btn zero" onClick={() => inputNum('0')}>
-          0
-        </button>
-        <button type="button" className="btn" onClick={() => inputNum('.')}>
-          .
-        </button>
-        <button type="button" className="btn orange" onClick={equals}>
-          =
-        </button>
+    <div>
+      <div className="container">
+        <h3>
+          Let&apos;s do some math!
+        </h3>
+        <div className="wrapper">
+          <div className="screen">{input}</div>
+          <button type="button" className="btn light-gray" onClick={reset}>
+            AC
+          </button>
+          <button type="button" className="btn light-gray" onClick={() => handlePercent(preState, curState, setCurState)}>
+            %
+          </button>
+          <button type="button" className="btn light-gray" onClick={() => handleMinusPlus(curState, setCurState)}>
+            +/-
+          </button>
+          <button type="button" className="btn orange" onClick={() => handleOperator('/', preState, curState, setInput, setPreState, setCurState, setOperator, setTotal)}>
+            /
+          </button>
+          <button type="button" className="btn" onClick={() => inputNum('7')}>
+            7
+          </button>
+          <button type="button" className="btn" onClick={() => inputNum('8')}>
+            8
+          </button>
+          <button type="button" className="btn" onClick={() => inputNum('9')}>
+            9
+          </button>
+          <button type="button" className="btn orange" onClick={() => handleOperator('*', preState, curState, setInput, setPreState, setCurState, setOperator, setTotal)}>
+            X
+          </button>
+          <button type="button" className="btn" onClick={() => inputNum('4')}>
+            4
+          </button>
+          <button type="button" className="btn" onClick={() => inputNum('5')}>
+            5
+          </button>
+          <button type="button" className="btn" onClick={() => inputNum('6')}>
+            6
+          </button>
+          <button type="button" className="btn orange" onClick={() => handleOperator('+', preState, curState, setInput, setPreState, setCurState, setOperator, setTotal)}>
+            +
+          </button>
+          <button type="button" className="btn" onClick={() => inputNum('1')}>
+            1
+          </button>
+          <button type="button" className="btn" onClick={() => inputNum('2')}>
+            2
+          </button>
+          <button type="button" className="btn" onClick={() => inputNum('3')}>
+            3
+          </button>
+          <button type="button" className="btn orange" onClick={() => handleOperator('-', preState, curState, setInput, setPreState, setCurState, setOperator, setTotal)}>
+            -
+          </button>
+          <button type="button" className="btn zero" onClick={() => inputNum('0')}>
+            0
+          </button>
+          <button type="button" className="btn" onClick={() => inputNum('.')}>
+            .
+          </button>
+          <button type="button" className="btn orange" onClick={equals}>
+            =
+          </button>
+        </div>
       </div>
     </div>
   );
