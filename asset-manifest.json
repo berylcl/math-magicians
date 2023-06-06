@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/berylcl.github.io/math-magicians/static/css/main.b67cc111.css",
+    "main.js": "/berylcl.github.io/math-magicians/static/js/main.29ae6c94.js",
+    "index.html": "/berylcl.github.io/math-magicians/index.html",
+    "main.b67cc111.css.map": "/berylcl.github.io/math-magicians/static/css/main.b67cc111.css.map",
+    "main.29ae6c94.js.map": "/berylcl.github.io/math-magicians/static/js/main.29ae6c94.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b67cc111.css",
+    "static/js/main.29ae6c94.js"
+  ]
+}
